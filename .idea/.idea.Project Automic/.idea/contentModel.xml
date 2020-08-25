@@ -4,6 +4,7 @@
     <e p="C:\Users\kelboukharielkhamlichi\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\kelboukharielkhamlichi\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Project Automic.-1338316194.00" t="ExcludeRecursive" />
     <e p="C:\Users\kelboukharielkhamlichi\Documents\Unity\Project Automic" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -61,6 +62,16 @@
           </e>
           <e p="ProjectSettings" t="Include">
             <e p="ProjectVersion.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="GitHub" t="Include">
+            <e p="Editor" t="Include">
+              <e p="credits.txt" t="Include" />
+              <e p="eula.txt" t="Include" />
+              <e p="ExtensionLoader.cs" t="Include" />
+              <e p="UnityAPIWrapper.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Scripts" t="Include">

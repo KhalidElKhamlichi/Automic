@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraShake : MonoBehaviour {
 
-    public bool isShaking;
+    public bool isShaking { get; private set; }
     
     public void shakeCamera(float duration = .1f, float magnitude = .2f) {
         if (!isShaking) {
@@ -14,7 +14,7 @@ public class CameraShake : MonoBehaviour {
     
     private IEnumerator shake(float duration, float magnitude) {
         isShaking = true;
-        Vector3 orignalPosition = transform.position;
+        Vector3 originalPosition = transform.position;
         float elapsed = 0f;
         
         while (elapsed < duration)
@@ -29,6 +29,6 @@ public class CameraShake : MonoBehaviour {
         }
 
         isShaking = false;
-        transform.position = orignalPosition;
+        transform.position = originalPosition;
     }
 }

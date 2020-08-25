@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraTracking : MonoBehaviour {
-    public float speed;
-    public float horizontalOffset;
+    [SerializeField] float speed;
+    [SerializeField] float horizontalOffset;
 
     private Transform target;
     private CameraShake cameraShake;
