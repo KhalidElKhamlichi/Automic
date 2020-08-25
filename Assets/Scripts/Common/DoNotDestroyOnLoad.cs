@@ -7,7 +7,7 @@ namespace Automic.Common {
         private void Awake() {        
             if (instance != null) {
                 Destroy(gameObject);
-            }else{
+            } else {
                 instance = this;
                 DontDestroyOnLoad(gameObject);
             }

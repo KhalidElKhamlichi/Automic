@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Automic.Common {
     public class CollisionManager : MonoBehaviour {
-        public string hitTriggerTag;
+        [SerializeField] string hitTriggerTag;
         private event Action<Collision> hitEvent;
 
         private void OnCollisionEnter(Collision other) {
@@ -12,8 +12,7 @@ namespace Automic.Common {
             }
         }
 
-        public void onHit(Action<Collision> onHit) {
-            hitEvent += onHit;
-        }
+        public void onHit(Action<Collision> onHit) => hitEvent += onHit;
+        
     }
 }

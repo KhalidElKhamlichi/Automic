@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Automic.Common {
     public class Lifecycle : MonoBehaviour {
 
-        public int initialHP;
+        [SerializeField] int initialHP;
     
         private event Action deathEvent;
         private int currentHP;

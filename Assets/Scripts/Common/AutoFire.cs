@@ -5,18 +5,20 @@ using UnityEngine;
 namespace Automic.Common {
     [RequireComponent(typeof(Weapon))]
     public class AutoFire : MonoBehaviour {
-        public Transform target;
-        public int nbrOfProjectilesInBurst;
-        public float delayBetweenBursts;
-        public float maxInitialDelay = 1f;
+        [SerializeField] Transform target;
+        [SerializeField] int nbrOfProjectilesInBurst;
+        [SerializeField] float delayBetweenBursts;
+        [SerializeField] float maxInitialDelay = 1f;
+        [SerializeField] float minInitialDelay = .2f;
     
         private Weapon weapon;
         private float burstTimer;
         private int projectilesFired;
         private float initialDelay;
+
         void Start() {
             weapon = GetComponent<Weapon>();
-            initialDelay = Random.Range(.2f, maxInitialDelay);
+            initialDelay = Random.Range(minInitialDelay, maxInitialDelay);
         }
 
         void FixedUpdate() {

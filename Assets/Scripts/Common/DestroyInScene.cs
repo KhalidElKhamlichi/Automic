@@ -3,8 +3,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Automic.Common {
-    public class DestroyOnScene : MonoBehaviour {
-        public List<int> scenes;
+    public class DestroyInScene : MonoBehaviour {
+        [SerializeField] List<int> sceneIndexes;
         private void Awake() {
             SceneManager.sceneLoaded += destroyOnScene;
         }
@@ -12,7 +12,7 @@ namespace Automic.Common {
         private void destroyOnScene(Scene scene, LoadSceneMode loadSceneMode) {
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
-            if (scenes.Contains(currentSceneIndex)) {
+            if (sceneIndexes.Contains(currentSceneIndex)) {
                 Destroy(gameObject);
             }
         }

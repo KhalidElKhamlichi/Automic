@@ -2,21 +2,21 @@
 using UnityEngine;
 
 namespace Automic.Common {
-   public class ProjectileLifecycle : MonoBehaviour
+   public class Projectile : MonoBehaviour
    {
-      public List<string> tagsToIgnore;
-      public GameObject onDeathVFX;
+      [SerializeField] List<string> tagsToIgnore;
+      [SerializeField] GameObject impactVFX;
 
       private void OnTriggerEnter(Collider other) {
          if (!tagsToIgnore.Contains(other.tag)) {
-            if (onDeathVFX != null) Instantiate(onDeathVFX, transform.position, onDeathVFX.transform.rotation);
+            if (impactVFX != null) Instantiate(impactVFX, transform.position, impactVFX.transform.rotation);
             Destroy(gameObject);
          }
       }
 
       private void OnCollisionEnter(Collision other) {
          if (!tagsToIgnore.Contains(other.collider.tag)) {
-            if (onDeathVFX != null) Instantiate(onDeathVFX, transform.position, onDeathVFX.transform.rotation);
+            if (impactVFX != null) Instantiate(impactVFX, transform.position, impactVFX.transform.rotation);
             Destroy(gameObject);
          }
       }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Automic.Common {
     [RequireComponent(typeof(Rigidbody))]
-    public class GenericController : MonoBehaviour {
+    public class BasicController : MonoBehaviour {
         [SerializeField, Range(0f, 10f)]
         float maxRotationSpeed;
         [SerializeField, Range(0f, 100f)]
@@ -41,20 +41,13 @@ namespace Automic.Common {
             rigidbody.rotation = Quaternion.Euler(currentRotation + new Vector3(0f, rotationAngle, 0f));
         }
 
-        public void shoot() {
-            weapon.fire();
-        }
+        public void shoot() => weapon?.fire();
 
-        public void slowRotation(float rotationSpeed) {
-            this.rotationSpeed = rotationSpeed;
-        }
+        public void slowRotation(float rotationSpeed) => this.rotationSpeed = rotationSpeed;
 
-        public void resetRotation() {
-            this.rotationSpeed = maxRotationSpeed;
-        }
+        public void resetRotation() => rotationSpeed = maxRotationSpeed;
 
-        public void lookAt(Vector3 direction) {
-            transform.rotation = Quaternion.LookRotation(direction, transform.up);
-        }
+        public void lookAt(Vector3 direction) => transform.rotation = Quaternion.LookRotation(direction, transform.up);
+        
     }
 }
