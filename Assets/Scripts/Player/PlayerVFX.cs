@@ -1,23 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Automic.Common;
 using UnityEngine;
-using UnityEngine.VFX;
 
-public class PlayerVFX : MonoBehaviour {
+namespace Automic.Player {
+    public class PlayerVFX : MonoBehaviour {
 
-    public GameObject hitVFX;
+        public GameObject hitVFX;
     
-    private Animator animator;
-    private static readonly int HURT = Animator.StringToHash("Hurt");
+        private Animator animator;
+        private static readonly int HURT = Animator.StringToHash("Hurt");
 
 
-    void Start() {
-        GetComponent<CollisionManager>().onHit(playOnHitVFX);
-        animator = GetComponent<Animator>();
-    }
+        void Start() {
+            GetComponent<CollisionManager>().onHit(playOnHitVFX);
+            animator = GetComponent<Animator>();
+        }
 
-    private void playOnHitVFX(Collision other) {
-        Instantiate(hitVFX, transform.position, hitVFX.transform.rotation, transform);
-        animator.SetTrigger(HURT);
+        private void playOnHitVFX(Collision other) {
+            Instantiate(hitVFX, transform.position, hitVFX.transform.rotation, transform);
+            animator.SetTrigger(HURT);
+        }
     }
 }

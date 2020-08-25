@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class SelfDestruct : MonoBehaviour {
+namespace Automic.Common {
+    public class SelfDestruct : MonoBehaviour {
 
-    public float lifetime;
-    void Start() {
-        Destroy(gameObject, lifetime);
+        public float lifetime;
+        void Start() {
+            Destroy(gameObject, lifetime);
+        }
+
     }
-
 }

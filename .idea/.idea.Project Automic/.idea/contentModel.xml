@@ -80,8 +80,7 @@
             <e p="CameraTracking.cs" t="Include" />
           </e>
           <e p="Common" t="Include">
-            <e p="Audio.cs" t="Include" />
-            <e p="AudioPlayer.cs" t="Include" />
+            <e p="AutoFire.cs" t="Include" />
             <e p="CollisionManager.cs" t="Include" />
             <e p="Damager.cs" t="Include" />
             <e p="DestroyOnScene.cs" t="Include" />
@@ -94,7 +93,6 @@
             <e p="SelfDestruct.cs" t="Include" />
           </e>
           <e p="Enemy" t="Include">
-            <e p="AutoFire.cs" t="Include" />
             <e p="BlockerVFX.cs" t="Include" />
             <e p="DeathVFX.cs" t="Include" />
             <e p="EnemyVFX.cs" t="Include" />
@@ -116,6 +114,8 @@
             <e p="Weapon.cs" t="Include" />
           </e>
           <e p="Sound" t="Include">
+            <e p="Audio.cs" t="Include" />
+            <e p="AudioPlayer.cs" t="Include" />
             <e p="SFX.cs" t="Include" />
             <e p="WeaponSFX.cs" t="Include" />
           </e>

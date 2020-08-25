@@ -1,39 +1,41 @@
 ﻿using System;
 using UnityEngine;
 
-public class Lifecycle : MonoBehaviour {
+namespace Automic.Common {
+    public class Lifecycle : MonoBehaviour {
 
-    public int initialHP;
+        public int initialHP;
     
-    private event Action deathEvent;
-    private int currentHP;
+        private event Action deathEvent;
+        private int currentHP;
 
-    protected virtual void Start() {
-        currentHP = initialHP;
-        GetComponent<CollisionManager>().onHit(takeDamage);
-    }
-
-    public void onDeath(Action onDeath) {
-        deathEvent += onDeath;
-    }
-
-    protected virtual void takeDamage(Collision other) {
-        Damager damager = other.gameObject.GetComponent<Damager>();
-        if (damager == null) return;
-        
-        currentHP -= damager.getDamage();
-        checkLife();
-    }
-
-    private void checkLife() {
-        if (currentHP <= 0) {
-            deathEvent?.Invoke();
-            onDeath();
+        protected virtual void Start() {
+            currentHP = initialHP;
+            GetComponent<CollisionManager>().onHit(takeDamage);
         }
-    }
 
-    protected virtual void onDeath() {
-        if (transform.parent != null) Destroy(transform.parent.gameObject);
-        else Destroy(gameObject);
+        public void onDeath(Action onDeath) {
+            deathEvent += onDeath;
+        }
+
+        protected virtual void takeDamage(Collision other) {
+            Damager damager = other.gameObject.GetComponent<Damager>();
+            if (damager == null) return;
+        
+            currentHP -= damager.getDamage();
+            checkLife();
+        }
+
+        private void checkLife() {
+            if (currentHP <= 0) {
+                deathEvent?.Invoke();
+                onDeath();
+            }
+        }
+
+        protected virtual void onDeath() {
+            if (transform.parent != null) Destroy(transform.parent.gameObject);
+            else Destroy(gameObject);
+        }
     }
 }

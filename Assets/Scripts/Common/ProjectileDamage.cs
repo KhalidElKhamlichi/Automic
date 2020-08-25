@@ -1,11 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ProjectileDamage : MonoBehaviour, Damager {
-    public int damage;
+namespace Automic.Common {
+    public class ProjectileDamage : MonoBehaviour, Damager {
+        public int damage;
 
-    public int getDamage() {
-        return damage;
+        public int getDamage() {
+            return damage;
+        }
     }
 }
