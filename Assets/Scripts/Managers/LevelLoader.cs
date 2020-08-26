@@ -5,17 +5,21 @@ using UnityEngine.SceneManagement;
 
 namespace Automic.Managers {
     public class LevelLoader : MonoBehaviour {
-        public Audio lvlClearAudio;
-        public Audio transitionAudio;
-        public GameObject audioPlayer;
+        private const string LEVEL_LOADER_TAG = "LevelLoader";
+        [SerializeField] Audio lvlClearAudio;
+        [SerializeField] Audio transitionAudio;
+        [SerializeField] GameObject audioPlayer;
 
         private static LevelLoader instance;
         private Animator levelTransitionCanvasAnimator;
         private Animator pauseCanvasAnimator;
         private bool isPaused;
         private GameManager gameManager;
+        private static readonly int FADE_OUT = Animator.StringToHash("Fadeout");
+        private static readonly int FADE_IN = Animator.StringToHash("FadeIn");
+
         private void Awake() {
-            GameObject[] objs = GameObject.FindGameObjectsWithTag("LevelLoader");
+            GameObject[] objs = GameObject.FindGameObjectsWithTag(LEVEL_LOADER_TAG);
 
             if (objs.Length > 1) {
                 Destroy(gameObject);
@@ -23,7 +27,6 @@ namespace Automic.Managers {
             else {
                 gameManager = FindObjectOfType<GameManager>();
                 subscribeToGameEvents();
-                // SceneManager.sceneLoaded += onSceneLoaded;
             }
             DontDestroyOnLoad(gameObject);
         }
@@ -33,18 +36,9 @@ namespace Automic.Managers {
             pauseCanvasAnimator = transform.GetChild(1).GetComponent<Animator>();
         }
 
-        private void onSceneLoaded(Scene scene, LoadSceneMode mode) {
-            // subscribeToGameEvents();
-        }
-
         private void subscribeToGameEvents() {
             gameManager.onLevelEnd(loadNextLevel);
             gameManager.onLevelEnd(playLvlClearAudio);
-        }
-
-        private void OnDestroy() {
-            gameManager?.removeFromLevelEndEvent(loadNextLevel);
-            gameManager?.removeFromLevelEndEvent(playLvlClearAudio);    
         }
 
         void Update() {
@@ -52,17 +46,16 @@ namespace Automic.Managers {
                 pause();
             }
         }
-    
+
         public void resume() {
             isPaused = false;
             Cursor.visible = false;
             // Unselect resume button to keep regular on hover color
             EventSystem.current.SetSelectedGameObject(null);
-            pauseCanvasAnimator.SetTrigger("Fadeout");
+            pauseCanvasAnimator.SetTrigger(FADE_OUT);
             Time.timeScale = 1;
-        
         }
-    
+
         // Used by onClick button event
         public void exit() {
             resume();
@@ -75,13 +68,13 @@ namespace Automic.Managers {
         }
 
         private void loadNextLevel() {
-            Invoke("fadeInLevelTransition", .8f);
+            Invoke(nameof(fadeInLevelTransition), .8f);
         }
 
         private void fadeInLevelTransition() {
-            levelTransitionCanvasAnimator.SetTrigger("FadeIn");
+            levelTransitionCanvasAnimator.SetTrigger(FADE_IN);
             Instantiate(audioPlayer).GetComponent<AudioPlayer>().play(transitionAudio);
-            Invoke("nextScene", 1.2f );
+            Invoke(nameof(nextScene), 1.2f );
         }
 
 
@@ -94,9 +87,13 @@ namespace Automic.Managers {
             if(isPaused) return;
             isPaused = true;
             Cursor.visible = true;
-            pauseCanvasAnimator.SetTrigger("FadeIn");
+            pauseCanvasAnimator.SetTrigger(FADE_IN);
             Time.timeScale = 0;
-        
+        }
+
+        private void OnDestroy() {
+            gameManager?.removeFromLevelEndEvent(loadNextLevel);
+            gameManager?.removeFromLevelEndEvent(playLvlClearAudio);    
         }
     }
 }
