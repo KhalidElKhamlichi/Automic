@@ -8,13 +8,13 @@ using UnityEngine;
 namespace Automic {
     public class MasterEnhancer : MonoBehaviour
     {
-        public List<Lifecycle> shieldLifeSources;
-        public List<Lifecycle> seals;
-        public float firerateMultiplierOnSealBreak;
-        public GameObject deathVFX;
-        public bool followPath;
-        public Audio shieldBreakAudio;
-        public GameObject audioPlayer;
+        [SerializeField] List<Lifecycle> shieldLifeSources;
+        [SerializeField] List<Lifecycle> seals;
+        [SerializeField] float firerateMultiplierOnSealBreak;
+        [SerializeField] GameObject deathVFX;
+        [SerializeField] bool followPath;
+        [SerializeField] Audio shieldBreakAudio;
+        [SerializeField] GameObject audioPlayer;
 
         void Start() {
             foreach (Lifecycle lifecycle in shieldLifeSources) {

@@ -4,8 +4,8 @@ using UnityEngine;
 namespace Automic {
     public class ProjectileTrail : MonoBehaviour {
 
-        public GameObject trailObject;
-        public float spawnRatePerSecond;
+        [SerializeField] GameObject trailObject;
+        [SerializeField] float spawnRatePerSecond;
 
         private float spawnTimer;
         private Transform spawnPoint;

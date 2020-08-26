@@ -5,7 +5,7 @@ using UnityEngine.VFX;
 namespace Automic {
     public class BlockerVFX : MonoBehaviour
     {
-        public GameObject impactVFX;
+        [SerializeField] GameObject impactVFX;
         void Start() {
             GetComponent<CollisionManager>().onHit(instantiateImpact); 
         }

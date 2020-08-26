@@ -9,38 +9,39 @@ namespace Automic {
     [RequireComponent(typeof(CollisionManager))]
     public class EnemyVFX : MonoBehaviour
     {
-        public GameObject impactVFX;
-        public GameObject hitVFX;
-        public GameObject deathVfx;
-        public GameObject spawnVFX;
-        public Material transparentMaterial;
-        public float hitVFXFrequency;
+        [SerializeField] GameObject impactVFX;
+        [SerializeField] GameObject hitVFX;
+        [SerializeField] GameObject deathVfx;
+        [SerializeField] GameObject spawnVFX;
+        [SerializeField] Material transparentMaterial;
+        [SerializeField] float hitVFXFrequency;
     
-        private float currentHitVFXFrequency;
+        private float hitVFXTimer;
         private Material originalMaterial;
         private Renderer renderer;
 
         private void OnEnable() {
             renderer = GetComponent<Renderer>();
             originalMaterial = renderer.material;
-            if (spawnVFX != null) {
-                Instantiate(spawnVFX, transform.position, spawnVFX.transform.rotation);
+            if (transparentMaterial != null && spawnVFX != null) {
+                startSpawnVFX();
             }
+        }
 
-            if (transparentMaterial != null) {
-                renderer.material = transparentMaterial;
-                StartCoroutine("fadeIn");
-            }
+        private void startSpawnVFX() {
+            Instantiate(spawnVFX, transform.position, spawnVFX.transform.rotation);
+            renderer.material = transparentMaterial;
+            StartCoroutine("fadeIn");
         }
 
         void Start() {
             GetComponent<CollisionManager>().onHit(playOnHitVFX); 
             GetComponent<Lifecycle>().onDeath(playOnDeathVFX);
-            currentHitVFXFrequency = hitVFXFrequency;
+            hitVFXTimer = 1/hitVFXFrequency;
         }
 
         private void Update() {
-            currentHitVFXFrequency -= Time.deltaTime;
+            hitVFXTimer -= Time.deltaTime;
         }
 
         private IEnumerator fadeIn() {
@@ -61,9 +62,9 @@ namespace Automic {
 
         private void instantiateHitVFX() {
             Transform gameObjectTransform = transform;
-            if (currentHitVFXFrequency <= 0) {
+            if (hitVFXTimer <= 0) {
                 Instantiate(hitVFX, gameObjectTransform.position, Quaternion.identity, gameObjectTransform);
-                currentHitVFXFrequency = hitVFXFrequency;
+                hitVFXTimer = hitVFXFrequency;
             }
         }    
 
