@@ -81,24 +81,22 @@
           </e>
           <e p="Common" t="Include">
             <e p="AutoFire.cs" t="Include" />
+            <e p="BasicController.cs" t="Include" />
             <e p="CollisionManager.cs" t="Include" />
             <e p="Damager.cs" t="Include" />
-            <e p="DestroyOnScene.cs" t="Include" />
+            <e p="DestroyInScene.cs" t="Include" />
             <e p="DoNotDestroyOnLoad.cs" t="Include" />
-            <e p="GenericController.cs" t="Include" />
             <e p="Lifecycle.cs" t="Include" />
+            <e p="Projectile.cs" t="Include" />
             <e p="ProjectileDamage.cs" t="Include" />
-            <e p="ProjectileLifecycle.cs" t="Include" />
             <e p="Rotator.cs" t="Include" />
             <e p="SelfDestruct.cs" t="Include" />
           </e>
           <e p="Enemy" t="Include">
             <e p="BlockerVFX.cs" t="Include" />
-            <e p="DeathVFX.cs" t="Include" />
             <e p="EnemyVFX.cs" t="Include" />
             <e p="FlashOnHit.cs" t="Include" />
             <e p="MasterEnhancer.cs" t="Include" />
-            <e p="MasterShield.cs" t="Include" />
             <e p="ProjectileTrail.cs" t="Include" />
             <e p="Seeker.cs" t="Include" />
           </e>
@@ -116,12 +114,13 @@
           <e p="Sound" t="Include">
             <e p="Audio.cs" t="Include" />
             <e p="AudioPlayer.cs" t="Include" />
+            <e p="ButtonAudio.cs" t="Include" />
             <e p="SFX.cs" t="Include" />
             <e p="WeaponSFX.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="ButtonActions.cs" t="Include" />
-            <e p="ButtonEvents.cs" t="Include" />
+            <e p="ButtonView.cs" t="Include" />
             <e p="UIControllerNavigation.cs" t="Include" />
           </e>
         </e>

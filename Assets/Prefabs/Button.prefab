@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7270086383657749098}
   - component: {fileID: 7270086383657749101}
   - component: {fileID: 7270086383657749102}
+  - component: {fileID: -9176505363917310030}
   m_Layer: 5
   m_Name: Button
   m_TagString: Button
@@ -143,18 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd26bd0cd4f421245a36b18af8ddfe6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultTextColor: {r: 0.27058825, g: 0.25490198, b: 0.21960784, a: 1}
   onHoverTextColor: {r: 0.8196079, g: 0.79215693, b: 0.6901961, a: 1}
-  audioPlayer: {fileID: 7003554518873723588, guid: 985a65b2e0b04a34d8bfa889667c4f34,
-    type: 3}
-  onHoverAudio:
-    clip: {fileID: 8300000, guid: 380095b1b287d284990666d4a30f6c79, type: 3}
-    volume: 0.8
-    pitch: 1
-  onClickAudio:
-    clip: {fileID: 8300000, guid: 037885adb9b35bd4e84e39de66829f3e, type: 3}
-    volume: 0.2
-    pitch: 1
+  defaultTextColor: {r: 0.27058825, g: 0.25490198, b: 0.21960784, a: 1}
 --- !u!114 &7270086383657749102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,6 +158,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df25463a61671af47a191fc64fa6d7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-9176505363917310030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7270086383657749096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd041db4087c41deb5f8d781539fc1b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPlayer: {fileID: 7003554518873723588, guid: 985a65b2e0b04a34d8bfa889667c4f34,
+    type: 3}
+  onHoverAudio:
+    clip: {fileID: 8300000, guid: 380095b1b287d284990666d4a30f6c79, type: 3}
+    volume: 0.8
+    pitch: 1
+  onClickAudio:
+    clip: {fileID: 8300000, guid: 037885adb9b35bd4e84e39de66829f3e, type: 3}
+    volume: 0.2
+    pitch: 1
 --- !u!1 &7270086384592893680
 GameObject:
   m_ObjectHideFlags: 0

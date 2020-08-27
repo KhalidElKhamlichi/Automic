@@ -23,7 +23,7 @@ namespace Automic.Common {
 
         public void move(Vector2 direction) {
             direction = Vector2.ClampMagnitude(direction, 1f);
-            Vector3 desiredVelocity = new Vector3(direction.x, 0f, -direction.y) * maxSpeed;
+            Vector3 desiredVelocity = new Vector3(direction.x, 0f, direction.y) * maxSpeed;
 		      
             float maxSpeedChange = acceleration * Time.deltaTime;
             velocity.x = Mathf.MoveTowards(velocity.x, desiredVelocity.x, maxSpeedChange);
