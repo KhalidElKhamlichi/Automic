@@ -7,27 +7,19 @@ using Random = UnityEngine.Random;
 namespace Automic.Player {
     [RequireComponent(typeof(WeaponSFX))]
     public class Weapon : MonoBehaviour {
-        public List<ProjectilePool> projectilePools;
-        public float projectileSpeed;
         public float firerate;
-        public int nbrOfSimultaneousProjectiles;
-        public float spreadAngle;
-        public float randomSpreadMax;
+        [SerializeField] List<ProjectilePool> projectilePools;
+        [SerializeField] float projectileSpeed;
+        [SerializeField] int nbrOfSimultaneousProjectiles;
+        [SerializeField] float spreadAngle;
+        [SerializeField] float randomSpreadMax;
 
         private float timer;
         private WeaponSFX weaponSfx;
         private GameObject currentProjectile;
-        public List<Stack<GameObject>> projectileStacks = new List<Stack<GameObject>>();
-
-        private void OnValidate() {
-            // if (nbrOfSimultaneousProjectiles > projectilePools.Count) {
-            //     Debug.LogWarning("nbrOfSimultaneousProjectiles should not exceed the number of projectile pools");
-            //     nbrOfSimultaneousProjectiles = projectilePools.Count;
-            // }
-        }
+        private List<Stack<GameObject>> projectileStacks = new List<Stack<GameObject>>();
 
         void Start() {
-            //timer = 1 / firerate;
             weaponSfx = GetComponent<WeaponSFX>();
             foreach (ProjectilePool projectilePool in projectilePools) {
                 projectileStacks.Add(new Stack<GameObject>(projectilePool.projectiles));
@@ -42,7 +34,6 @@ namespace Automic.Player {
                 resetTimer();
                 return true;
             }
-
             return false;
         }
 
@@ -71,9 +62,10 @@ namespace Automic.Player {
             }
             // rotate weapon
             transform.Rotate(0, spread, 0);
+            
             Rigidbody rbody = projectileClone.GetComponentInChildren<Rigidbody>() ?? projectileClone.GetComponent<Rigidbody>();
-            // float random = Random.Range(1.1f, 1.4f);
             rbody.AddForce(transform.forward * projectileSpeed, ForceMode.Impulse);
+            
             // reset rotation
             transform.Rotate(0, -spread, 0);
         }

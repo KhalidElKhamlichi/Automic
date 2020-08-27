@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Automic.Player {
     public class PlayerVFX : MonoBehaviour {
 
-        public GameObject hitVFX;
+        [SerializeField] GameObject hitVFX;
     
         private Animator animator;
         private static readonly int HURT = Animator.StringToHash("Hurt");

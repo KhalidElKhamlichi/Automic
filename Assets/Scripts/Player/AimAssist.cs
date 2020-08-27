@@ -2,22 +2,25 @@
 using UnityEngine;
 
 namespace Automic.Player {
-    [RequireComponent(typeof(GenericController))]
+    [RequireComponent(typeof(BasicController))]
     public class AimAssist : MonoBehaviour {
+        private const float RAY_CAST_OFFSET = 6.5f;
+
         [SerializeField, Range(0f, 10f)]
         float slowRotationSpeed;
-        public LayerMask collisionMask;
+        [SerializeField] LayerMask collisionMask;
     
-        private GenericController controller;
+        private BasicController controller;
 
         void Start() {
-            controller = GetComponent<GenericController>();
+            controller = GetComponent<BasicController>();
         }
 
         void Update() {
+            Vector3 offset = transform.right * RAY_CAST_OFFSET - transform.forward * RAY_CAST_OFFSET;
             if (castRay(Vector3.zero, transform.forward)
-                || castRay(transform.right / 1.5f - transform.forward / 1.5f, transform.forward)
-                || castRay(-transform.right / 1.5f - transform.forward / 1.5f, transform.forward)) {
+                || castRay(offset, transform.forward)
+                || castRay(-offset, transform.forward)) {
                 controller.slowRotation(slowRotationSpeed);
             }
             else {
