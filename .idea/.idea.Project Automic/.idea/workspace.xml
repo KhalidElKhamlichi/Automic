@@ -2,17 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51541abb-3afc-4b60-876d-21ff4a7e5cab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/SFX/UI/OnClickAudio.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SFX/UI/OnClickAudio.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SFX/UI/OnHoverAudio.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SFX/UI/OnHoverAudio.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonAudio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonAudio.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Automic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Automic/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Automic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Automic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/Audio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/Audio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/Audio.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/Audio.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/AudioPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/AudioPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/AudioPlayer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/AudioPlayer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/CollisionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/CollisionManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/GenericController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/GenericController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/AutoFire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/AutoFire.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/AutoFire.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/AutoFire.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/Blocker Impact Visual Effect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/Blocker Impact Visual Effect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game Manager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Homing projectile wrapper.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Homing projectile wrapper.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelLoader.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelLoader.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Bullet wrapper.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Bullet wrapper.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Bullet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Bullet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player Hit VFX.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player Hit VFX.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Seeker.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Seeker/Seeker.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Seeker/Seeker.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Seeker/ShieldShatterVFX.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Seeker/ShieldShatterVFX.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Seeker/Shielded Seeker.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Seeker/Shielded Seeker.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spawn Effect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spawn Effect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere/Dark Red bullet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere/Dark Red bullet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere/Dark bullet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere/Dark bullet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere/DeathVFX.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere/DeathVFX.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere/Enemy Hit VFX.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere/Enemy Hit VFX.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere/Impact Visual Effect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere/Impact Visual Effect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere/Master Sphere.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere/Master Sphere.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere/Projectile impact vfx.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere/Projectile impact vfx.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere/Sphere.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere/Sphere.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tower.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tower.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TrailCube.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TrailCube.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SFX/UI/UI_select3.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SFX/UI/UI_select3.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SFX/UI/UI_select4.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SFX/UI/UI_select4.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene-hachi.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene-hachi.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/BasicController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/BasicController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonEvents.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIControllerNavigation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIControllerNavigation.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +72,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/MasterEnhancer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Materials/DeathVFX/NewSurfaceShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyVFX.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/AutoFire.cs" root0="FORCE_HIGHLIGHTING" />
@@ -31,8 +80,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Seeker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D815B7EF-AC42-4EEB-8E05-3965CCCB1F98/f8/adf1ee7a/Renderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/FlashOnHit.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/DeathVFX.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerLifecycle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Path Creator Project/Assets/PathCreator/Core/Runtime/Utility/CubicBezierUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D815B7EF-AC42-4EEB-8E05-3965CCCB1F98/f5/50933284/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@7.1.8/Runtime/UniversalRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
@@ -44,20 +93,27 @@
     <setting file="file://$PROJECT_DIR$/Assets/Path Creator Project/Assets/PathCreator/Core/Runtime/Objects/VertexPath.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Path Creator Project/Assets/PathCreator/Core/Runtime/Objects/BezierPath.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonAudio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerVFX.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonActions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/WeaponSFX.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D26FC0D0-DDA4-454E-818D-55DFDA42CDB8/7d/602b9b8e/IPointerEnterHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIControllerNavigation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/SFX.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Path Creator Project/Assets/PathCreator/Examples/Scripts/PathPlacer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Path Creator Project/Assets/PathCreator/Examples/Scripts/PathSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/ProjectileTrail.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/MasterShield.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/ProjectileDamage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Path Creator Project/Assets/PathCreator/Examples/Scripts/RoadMeshCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Path Creator Project/Assets/PathCreator/Examples/Scripts/PathFollower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/BlockerVFX.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BD1B6EA4-F54D-4146-A29C-2A12CD6EC436/ac/1998de9f/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/SelfDestruct.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity2019.3.7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D815B7EF-AC42-4EEB-8E05-3965CCCB1F98/45/0bbe1a8e/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/Rotator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D815B7EF-AC42-4EEB-8E05-3965CCCB1F98/78/18d5082b/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity2019.3.7/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/645666A8-CEA4-4BF5-905E-0EF193655174/2a/3c95d132/Stack`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -65,42 +121,25 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@7.1.8/Runtime/Passes/MainLightShadowCasterPass.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraTracking.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraShake.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/GenericController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/Lifecycle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/BasicController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/DoNotDestroyOnLoad.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/DestroyOnScene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/DestroyInScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E93AB2F8-5FF8-4881-B6AB-5BA98D373CFC/d4/656ba4a1/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/Damager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Path Creator Project/Assets/PathCreator/Core/Runtime/Objects/GlobalDisplaySettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/CollisionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/AudioPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/AimAssist.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/Audio.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonEvents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/LevelLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D815B7EF-AC42-4EEB-8E05-3965CCCB1F98/0e/c35b5408/Transform.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/VFXPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyVFX.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/CollisionManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyLifecycle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Lifecycle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/ProjectileLifecycle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSFX.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemySFX.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AudioPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Audio.cs" />
-        <option value="$PROJECT_DIR$/Assets/Path Creator Project/Assets/PathCreator/Examples/Scripts/PathFollower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Materials/Materials/NewSurfaceShader.shader" />
-        <option value="$PROJECT_DIR$/Assets/Materials/Shaders/newBlur.shader" />
-        <option value="$PROJECT_DIR$/Assets/Materials/Shaders/SHADER.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SelfDestruct.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerVFX.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BlockerVFX.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/GenericController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/ProjectileTrail.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AimAssist.cs" />
         <option value="$PROJECT_DIR$/Assets/CSS/stylesheet.uss" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DoNotDestroyOnLoad.cs" />
@@ -108,40 +147,63 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SFX.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/MasterShield.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/FlashOnHit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ProjectileLifecycle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GenericController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lifecycle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerLifecycle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ButtonEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DestroyOnScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Seeker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyVFX.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraTracking.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIControllerNavigation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/AutoFire.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/MasterEnhancer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ButtonActions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraTracking.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Common/CollisionManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Common/GenericController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraShake.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/AutoFire.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/DestroyOnScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/DestroyOnLoad.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/DestroyInScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/GenericController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/DoNotDestroyOnLoad.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/Lifecycle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/CollisionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/ProjectileDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/ProjectileLifecycle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/Projectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/Rotator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/DeathVFX.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BlockerVFX.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyVFX.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/FlashOnHit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/MasterEnhancer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/ProjectileTrail.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/BasicController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Seeker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/LevelLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/AimAssist.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerVFX.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ButtonAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ButtonEvents.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ButtonView.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1ZuYIfjh6AzY5fuJSqGoYQSrYDB" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.SolutionExplorerActivator" value="true" />
@@ -237,6 +299,8 @@
       <workItem from="1597851016940" duration="5700000" />
       <workItem from="1598217314544" duration="2123000" />
       <workItem from="1598381793064" duration="1681000" />
+      <workItem from="1598464538412" duration="9692000" />
+      <workItem from="1598551615170" duration="5178000" />
     </task>
     <servers />
   </component>
@@ -247,11 +311,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="-905" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590435151741">
@@ -357,15 +426,19 @@
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1590418224550" />
     <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1595173018416" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598471102309">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1598471102309" />
     <state x="177" y="148" width="1007" height="527" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1593981839227">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="177" y="148" width="1007" height="527" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1593981839227" />
-    <state x="648" y="-1057" width="822" height="1015" key="find.popup" timestamp="1597868855709">
-      <screen x="0" y="-1080" width="1920" height="1040" />
+    <state x="518" y="18" width="705" height="804" key="find.popup" timestamp="1598398994528">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="648" y="-1057" width="822" height="1015" key="find.popup/0.0.1536.824/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1597868855709" />
-    <state x="518" y="18" width="658" height="804" key="find.popup/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1597018447887" />
+    <state x="518" y="18" width="705" height="804" key="find.popup/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1598398994528" />
     <state x="539" y="-897" width="840" height="856" key="search.everywhere.popup" timestamp="1597868823238">
       <screen x="0" y="-1080" width="1920" height="1040" />
     </state>
@@ -374,21 +447,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Player/Weapon.cs</url>
-          <line>39</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Player/Weapon.cs" initialLine="39">
-            <startOffsets>
-              <option value="1323" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1340" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="98" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="DotNet Exception Breakpoints" />
         <breakpoint type="DotNet Exception Breakpoints">
