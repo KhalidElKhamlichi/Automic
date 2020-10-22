@@ -1456,6 +1456,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6310516342676051724, guid: fe0c18442e6a7df43bfc080d209f864e,
         type: 3}
+      propertyPath: seals.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310516342676051724, guid: fe0c18442e6a7df43bfc080d209f864e,
+        type: 3}
       propertyPath: shieldLifeSources.Array.data[0]
       value: 
       objectReference: {fileID: 1257838792}
