@@ -10,10 +10,9 @@ namespace Automic.Player {
         private GameObject crosshairInstance;
         private Vector3 lastMousePos = Vector3.zero;
         private InputType inputType = InputType.KB;
-        private UnityEngine.Camera camera;
+        private UnityEngine.Camera camera = UnityEngine.Camera.main;
 
         public void Start() {
-            camera = UnityEngine.Camera.main;
             basicController = GetComponent<BasicController>();
             crosshairInstance = Instantiate(crosshair);
         }

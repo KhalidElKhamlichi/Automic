@@ -12,11 +12,11 @@ namespace Automic.UI {
         private TextMeshProUGUI recordTimeText;
         void Start() {
             buttons = GameObject.FindGameObjectsWithTag(BUTTON_TAG);
-            recordTimeText = gameObject.transform.Find(RECORD_TIME)?.GetComponent<TextMeshProUGUI>();
+            recordTimeText = gameObject.transform.Find(RECORD_TIME).GetComponent<TextMeshProUGUI>();
             string recordTime = "N/A";
             if (!string.IsNullOrEmpty(PlayerPrefs.GetString(RECORD_TIME)))
                 recordTime = PlayerPrefs.GetString(RECORD_TIME);
-            if(recordTimeText) recordTimeText.text += recordTime;
+            recordTimeText.text += recordTime;
         }
 
         void Update() {
