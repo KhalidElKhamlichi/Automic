@@ -5071,6 +5071,7 @@ MonoBehaviour:
   nbrOfProjectilesInBurst: 0
   delayBetweenBursts: 0
   maxInitialDelay: 1
+  minInitialDelay: 0.2
 --- !u!114 &1690778080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5083,11 +5084,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d811060fbbd7646ada6475937b3d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firerate: 0.6
   projectilePools:
   - projectiles:
     - {fileID: 5607485329365524761, guid: 48684d513fcb8314ea96a517ad1d7691, type: 3}
   projectileSpeed: 0
-  firerate: 0.6
   nbrOfSimultaneousProjectiles: 1
   spreadAngle: 0
   randomSpreadMax: 0
@@ -6219,6 +6220,7 @@ MonoBehaviour:
   nbrOfProjectilesInBurst: 0
   delayBetweenBursts: 0
   maxInitialDelay: 1
+  minInitialDelay: 0.2
 --- !u!114 &1972612300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6231,11 +6233,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d811060fbbd7646ada6475937b3d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firerate: 0.6
   projectilePools:
   - projectiles:
     - {fileID: 5607485329365524761, guid: 48684d513fcb8314ea96a517ad1d7691, type: 3}
   projectileSpeed: 0
-  firerate: 0.6
   nbrOfSimultaneousProjectiles: 1
   spreadAngle: 0
   randomSpreadMax: 0
