@@ -2087,7 +2087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxRotationSpeed: 0.4
-  maxSpeed: 15
+  maxSpeed: 13
   acceleration: 40
 --- !u!114 &6383837279297601571
 MonoBehaviour:
@@ -2258,11 +2258,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d811060fbbd7646ada6475937b3d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firerate: 7
   projectilePools:
   - projectiles:
     - {fileID: 7745211957012479179, guid: b8e28b1c4c066db48863373b76bea847, type: 3}
-  projectileSpeed: 20
-  firerate: 7
+  projectileSpeed: 25
   nbrOfSimultaneousProjectiles: 1
   spreadAngle: 0
   randomSpreadMax: 0
