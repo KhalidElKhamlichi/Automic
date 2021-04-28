@@ -13,7 +13,7 @@ namespace Automic {
         private void instantiateImpact(Collision other) {
             GameObject impact = Instantiate(impactVFX, other.contacts[0].point, Quaternion.identity);
             impact.transform.LookAt(other.transform.position);
-            impact.GetComponent<VisualEffect>().Play();
+//            impact.GetComponent<VisualEffect>().Play();
             Destroy(impact, 1);
         }
     }

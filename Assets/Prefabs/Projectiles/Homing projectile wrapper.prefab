@@ -115,6 +115,7 @@ MonoBehaviour:
   collisionMask:
     serializedVersion: 2
     m_Bits: 0
+  rayCastMaxDistance: 4
 --- !u!114 &5607485329365524740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,8 +131,7 @@ MonoBehaviour:
   tagsToIgnore:
   - Enemy
   - ENEMY_PROJECTILE
-  onDeathVFX: {fileID: 9166831877019358591, guid: 2e2c48375f955da4aaf0e4faee679f27,
-    type: 3}
+  impactVFX: {fileID: 0}
 --- !u!114 &5607485329365524763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 712e6fa67f7620845a375e3de270953e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 50
+  damage: 10
 --- !u!114 &5607485329365524762
 MonoBehaviour:
   m_ObjectHideFlags: 0

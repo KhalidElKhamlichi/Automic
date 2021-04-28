@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b330582ac48c6844fa37ee5f2d8e3284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impactVFX: {fileID: 8062881626724905893, guid: 8ed41769d365f0a4fabae4079d18e382,
+  impactVFX: {fileID: 8518105235164914648, guid: 6193efc49d747644bbca8dadea71a16e,
     type: 3}
 --- !u!114 &284507557
 MonoBehaviour:

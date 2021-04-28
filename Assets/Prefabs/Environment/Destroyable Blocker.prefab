@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7c8cd565b2add44f8d7b7c66155c281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impactVFX: {fileID: 8062881626724905893, guid: 7d71da342b267c14fb578681125e0d5b,
+  impactVFX: {fileID: 3232345342105582744, guid: a0f9b2dd33ccbae4f81bf3230317cc5d,
     type: 3}
   hitVFX: {fileID: 0}
   deathVfx: {fileID: 0}

@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5284f0d11b5af64a8348241a486b24a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialHP: 50
+  initialHP: 30
 --- !u!114 &8492563383350440591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,10 +156,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7c8cd565b2add44f8d7b7c66155c281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impactVFX: {fileID: 8062881626724905893, guid: 7d71da342b267c14fb578681125e0d5b,
+  impactVFX: {fileID: 3232345342105582744, guid: a0f9b2dd33ccbae4f81bf3230317cc5d,
     type: 3}
-  hitVFX: {fileID: 3722294338809926739, guid: 7d2d944507f406243b0728634b2c45ce, type: 3}
-  deathVfx: {fileID: 2861839084616681415, guid: de5b7a5cd8412354bb6b28cab930c4c0,
+  hitVFX: {fileID: 7273249214091184990, guid: 0d51b508e6c45ca4e874184dea629567, type: 3}
+  deathVfx: {fileID: 2861839084616681415, guid: b26e748ddcf5b08499b1f19c068b90a4,
     type: 3}
   spawnVFX: {fileID: 7930217971250568788, guid: e18cbb0ec973b764c994e988f651ac5c,
     type: 3}
@@ -391,9 +391,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d811060fbbd7646ada6475937b3d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firerate: 1
   projectilePools: []
   projectileSpeed: 8
-  firerate: 1
   nbrOfSimultaneousProjectiles: 0
   spreadAngle: 0
   randomSpreadMax: 5
@@ -426,7 +426,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 51f010a92436b524786352e04a8a228d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0

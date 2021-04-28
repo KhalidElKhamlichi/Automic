@@ -63,15 +63,14 @@ namespace Automic {
         private void instantiateHitVFX() {
             Transform gameObjectTransform = transform;
             if (hitVFXTimer <= 0) {
-                Instantiate(hitVFX, gameObjectTransform.position, Quaternion.identity, gameObjectTransform);
-                hitVFXTimer = hitVFXFrequency;
+                Instantiate(hitVFX, gameObjectTransform.position, hitVFX.transform.rotation, gameObjectTransform);
+                hitVFXTimer = 1/hitVFXFrequency;
             }
         }    
 
         private void instantiateImpact(Collision other) {
             GameObject impact = Instantiate(impactVFX, other.contacts[0].point, Quaternion.identity);
             impact.transform.LookAt(other.transform.position);
-            impact.GetComponent<VisualEffect>().Play();
             Destroy(impact, 1);
         }
 
